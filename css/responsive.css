@@ -19,7 +19,7 @@
         padding: 200px 24px;
     }
     .header-menu-tablet__container{
-        width: 50%;
+        width: 75%;
     }
     .slider-content{
         padding-top: 150px;
@@ -27,8 +27,16 @@
     .slider-content-text{
         padding-bottom: 45px;
     }
-    .service__detail{
+    .service__des{
         text-align: center;
+    }
+    .service-detail-container-text__subheader,
+    .service-detail-container-text__header,
+    .service-detail-container-text__content{
+        text-align: center;
+    }
+    .homepage-video__list-title{
+        padding-top: 20px;
     }
 }
 /* tablet and mobile */
