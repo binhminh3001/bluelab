@@ -5,6 +5,11 @@
     --white-color: #fff;
     --black-color: #000
 }
+::selection{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
 html{
     /* hack */
     font-size: 62.5%;
@@ -12,6 +17,39 @@ html{
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
     background-color: #fff;
+}
+.btn{
+    background-color:#eaeafd;
+    color: var(--primary-color);
+    border: none;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    padding: 20px 40px;
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+   
+    
+}
+.btn--active{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    animation: slowShow linear 0.4s;
+}
+.btn--active:hover{
+    background-color:#eaeafd;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+@keyframes slowShow{
+    from{ opacity: 0;}
+    to{ opacity: 1;}
 }
 .grid {
     width: 100%;

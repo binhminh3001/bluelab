@@ -21,6 +21,15 @@
     .header-menu-tablet__container{
         width: 50%;
     }
+    .slider-content{
+        padding-top: 150px;
+    }
+    .slider-content-text{
+        padding-bottom: 45px;
+    }
+    .service__detail{
+        text-align: center;
+    }
 }
 /* tablet and mobile */
 @media (max-width: 1023px){
@@ -48,6 +57,17 @@
         background-color: transparent;
         border: none;
     }
+    .service{
+        padding-bottom: 0;
+    }
+    .service-seo{
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    .service-web{
+        padding-top: 100px;
+    }
     .sticky .header-menu-tablet__search,
     .sticky .header-menu-tablet__nav{
         color: var(--header-color);
@@ -66,5 +86,11 @@
     } 
     .slider-image-table{
         right: 203px;
+    }
+    .price-container{
+        padding: 35px 0;
+    }
+    .price-title{
+        padding: 0;
     }
 }

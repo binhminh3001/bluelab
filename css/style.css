@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* header */
 .header{
     display: flex;
@@ -237,7 +238,7 @@
     right: 67%;
 }
 .service{
-    padding: 150px 0;
+    padding-top: 150px;
 }
 .service__icon{
     font-size: 4rem;
@@ -254,7 +255,7 @@
     color: var(--header-color);
     margin-bottom: 24px;
 }
-.service__detail{
+.service__des{
     --height-text: 1.6rem;
     font-size: var(--height-text);
     color: var(--text-color);
@@ -262,59 +263,158 @@
     line-height: calc(var(--height-text) * 2) ;
     letter-spacing: 2px;
 }
+
 .service-seo{
-    padding-top: 50px;
+    padding-top: 150px;
 }
-.service-content-container-text{
+.service-detail-container-text{
     padding: 50px 8px 0 8px;
 }
-.web-container-text__subheader,
-.service-content-container-text__subheader{
+
+.service-detail-container-text__subheader{
     font-size: 2rem;
     letter-spacing: 1.5px;
     color: var(--text-color);
     padding: 24px 0px;
 }
-.web-container-text__header,
-.service-content-container-text__header{
+
+.service-detail-container-text__header{
     font-size: 4rem;
     letter-spacing: 2px;
     line-height: 6rem;
     padding: 16px 0;
     color: var(--header-color);
 }
-.web-container-text__content,
-.service-content-container-text__content{
+
+.service-detail-container-text__content{
     color: var(--text-color);
     font-size: 1.4rem;
     line-height: 2.8rem;
     padding: 16px 42px 16px 0;
 }
-.service-content-container-img{
+.service-detail-container-img{
+    display: flex;
+    justify-content: center;
     width: 100%;
+    
 }
 .service-web{
     padding-top: 150px;
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 150px;
 }
-.web-container-img{
+.homepage-video__subtitle{
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    color: var(--text-color);
+    text-align: center;
+}
+.homepage-video__title{
+    font-size: 4rem;
+    line-height: 8rem;
+    color: var(--header-color);
+    text-align: center;
+
+}
+.home-video{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.homepage-video__video{
+    margin: 60px auto;
     display: flex;
     justify-content: center;
     width: 100%;
+}
+.homepage-video__list-title,
+.homepage-video__des-title{
+    font-size: 2rem;
+    line-height: 3.6rem;
+    color: var(--header-color);
+    padding-left: 50px;
+}
+.homepage-video__des-content{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+    color: var(--text-color);
+    padding: 10px 50px 0 50px;
+}
+.homepage-video__list-list{
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.homepage-video__list-item{
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+    color: var(--text-color);
+    padding-bottom: 8px;
+}
+.homepage-video__list-item-icon{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+}
+.price{
+    background-color: #f8f8ff;
+    padding: 120px 0;
 
 }
-.web-container-text{
-    padding-left: 30px;
+.price-container{
+    padding: 35px 15px 0;
 }
-.web-container-text__subheader{
+.price-subtitle{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-align: center;
 
 }
-.web-container-text__header{
+.price-title{
+    font-size: 4rem;
+    line-height: 8rem;
+    text-align: center;
+    color: var(--header-color);
+    padding-bottom: 70px;
+}
+.price-service{
+    padding: 120px 40px;
+}
+.price-service__highlights{
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 10px #ccc;
+    border-radius: 5px;
+}
+.price-service__type{
+    font-size: 3rem;
+    line-height: 6rem;
+    padding-bottom: 20px;
+    color: var(--text-color);
+    text-align: center;
+
 
 }
-.web-container-text__content{
-
+.price-service__price{
+    font-size: 8rem;
+    line-height: 8rem;
+    color: var(--black-color);
+    opacity: 0.8;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.price-service__des{
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 50px;
 }
 
 @keyframes showRight {
