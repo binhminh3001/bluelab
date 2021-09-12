@@ -416,7 +416,131 @@
     color: var(--text-color);
     padding-bottom: 50px;
 }
+.person{
+    padding-top: 100px
 
+}
+.person-text{
+    padding: 35px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.person-text__subtitle{
+    font-size: 2rem;
+    line-height: 4rem;
+    padding-top: 20px;
+    color: var(--text-color);
+
+}
+.person-text__title{
+    font-size: 4rem;
+    line-height: 6rem;
+    color: var(--header-color);
+    padding-top: 10px;
+
+}
+.person-text__content{
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    position: relative;
+}
+.person-container{
+    padding: 120px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.person-container__member-link{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.person-container__member-link:nth-child(1){
+    position: absolute;
+    top: calc(5% + 10px);
+    left: 10%;
+}
+.person-container__member-link:nth-child(2){
+    position: absolute;
+    top: calc(5% + 10px);
+    left: calc(10% + 70px);
+}
+.person-container__member-link:nth-child(3){
+    position: absolute;
+    top: calc(5% + 10px);
+    left: calc(10% + 140px);
+}
+
+.person-container__member-img{
+    width: 50px;
+    border-radius: 50%;
+    opacity: 0.7;
+    border: 2px solid #ccc;
+}
+.member--active{
+    opacity: 1;
+    border: 5px solid var(--primary-color);
+}
+.person-container__info{
+    background-color: #f8f8ff;
+    padding: 80px 40px;
+    margin: 0 185px;
+    
+}
+.person-container__frames{
+    padding: 14px 0;
+    border: 2px solid #f8f8ff;
+}
+.person-container__thumnail{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.person-container__headline{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    padding-top: 35px;
+
+}
+.person-container__career{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    color: var(--black-color);
+    opacity: 0.8;
+
+}
+.person-container__pagination-list{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    justify-content: center;
+
+}
+.person-container__pagination-item{
+    margin: 5px 7px;
+}
+.person-container__pagination-link{
+    border: none;
+    background-color: #9bace6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+
+}
+.pagination--active{
+    background-color: #5472d2;
+}
 @keyframes showRight {
     from{
         transform: translateX(100px);

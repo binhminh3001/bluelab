@@ -101,4 +101,7 @@
     .price-title{
         padding: 0;
     }
+    .person-container__info{
+        margin: 20px;
+    }
 }
