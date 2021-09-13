@@ -218,7 +218,18 @@
             </div>
             <div class="row no-gutters">
                 <div class="col l-12 m-12 c-12">
-                    <video class="homepage-video__video" src="/img/bluelab-video.mp4"></video>
+                    <div class="hompage-video__container">
+                        <video class="homepage-video__video" src="/img/bluelab-video.mp4"></video>
+                        <div class="videos-controls">
+                            <div class="videos-bar">
+                                <div class="videos-times"></div>
+                            </div>
+                            <div class="videos-button">
+                                <button id="play-pause"></button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="row no-gutters">
@@ -360,12 +371,14 @@
         </div>
     </div>
     <footer class="grid wide"></footer>
+    <!--  scoll header bar  -->
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
             var header = document.querySelector(".header")
             header.classList.toggle("sticky", window.scrollY > 0)
         })
     </script>
+    <!-- open nav menu -->
     <script type="text/javascript">
     const navMenu = document.querySelector('.js-nav-menu')
     const openHeaderMenu = document.querySelector('.header-menu-tablet')
@@ -390,11 +403,42 @@
         event.stopPropagation()
     })
     </script>
+    <!-- Animation scoll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
           duration: 1000
       });
+    </script>
+    <!-- play video -->
+    <script type="text/javascript">
+        var videoType = document.querySelector('.homepage-video__video')
+        var timeVideo = document.querySelector('.videos-times')
+        var button = document.getElementById('play-pause')
+
+        function toggelPlayPause(){
+            if(videoType.paused){
+                button.className = "pause"
+                videoType.play()
+            }
+            else{
+                button.className = "play"
+                videoType.pause()
+            }
+        }
+        button.onclick = function(){
+            toggelPlayPause();
+        }
+        videoType.onclick = function(){
+            toggelPlayPause();
+        }
+        videoType.addEventListener("timeupdate", function(){
+            var timePos = videoType.currentTime / videoType.duration
+            timeVideo.style.width = timePos * 100 + "%"
+            if(videoType.ended){
+                button.className = "play"
+            }
+        })
     </script>
 </body>
 </html>
